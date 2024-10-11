@@ -45,7 +45,7 @@ local function protect(lol)
 				if v.instance.ClassName == "ScreenGui" and gethui then
 					local name = ""
 					for _ = 1, math.random(4, 8) do
-						name = name .. string.char(math.random(97, 122))
+						name = name..string.char(math.random(97, 122))
 					end
 					if sethiddenproperty then
 						sethiddenproperty(v.instance, "Parent", gethui())
