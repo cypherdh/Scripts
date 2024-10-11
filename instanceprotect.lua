@@ -29,7 +29,7 @@ local function protect(lol)
 		if v.instance and not rawequal(v.instance, tostring(nil)) then
 			if not checkcaller() then return end
 			if getconnections then
-				for _, eventname in ipairs(events) do
+				for _, eventname in pairs(events) do
 					local h, event = pcall(function()
 						return v.instance[eventname]
 					end)
